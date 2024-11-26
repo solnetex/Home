@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'IBM';
+    src: url(IBMPlexSans-Bold.ttf);
+}
+
+
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and nav links */
+    padding: 10px; /* Add some padding */
+}
+
+.logo-link {
+    display: inline-block; /* Make the link behave like an inline block */
+}
+
+.logo {
+    width: 95%;
+    max-width: 250px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Enlarge the logo on hover */
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-family: IBM;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    font-family: IBM;
+}
+
+.nav-links li a {
+    font-size: 1.2em;
+    color: #9eb6e9;
+    transition: color 0.7 ease;
+    font-family: IBM;
+}
+
+.nav-links li a:hover {
+    color: #253333;
+}
+
+.hero {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 80px 10%;
+    background: url('moreimg/LOGO.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    height: 80vh;
+    position: relative;
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure content is above the tint */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency */
+    z-index: -1; /* Place behind the content */
+}
+
+
+.hero-content {
+    max-width: 50%;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #c5ffff00;
+    color: rgb(35, 88, 92);
+    font-size: 1.2em;
+    border-radius: 115px;
+    transition: background-color 0.3s, border-radius 0.6s ease;
+    display: inline-block;
+    backdrop-filter: blur(15px);
+    font-family: IBM;
+}
+
+.hero .btn:hover {
+    background-color: #3eceb671;
+    border-radius: 150px;
+    backdrop-filter: blur(1000000px);
+}
+
+/* About Section */
+.about {
+    padding: 60px 10%;
+    background-color: #00000000;
+    color: #c9c9c9;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 10%;
+    background-color: #c5ffff00;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service {
+    background-color: #529690;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px rgba(159, 202, 230, 0.7); /* Increased red glow */
+    transition: transform 0.3s ease;
+    color: #979797;
+    color: #ffffff;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    border-radius: 35px;
+}
+
+.service h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1.1em;
+}
+
+/* Order Section */
+.order-section {
+    padding: 40px 5%;
+    background-color: #202020;
+    text-align: center;
+    border-radius: 500px;}
+
+.order-section h2 {
+    font-size: 2.5em;
+    color: #d4d4d4;
+}
+
+.order-section .btn {
+    padding: 12px 24px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: all 0.7s ease;
+    text-align: center;
+}
+
+.order-section p {
+    color: #bbbbbb;
+    font-family: IBM;
+}
+
+.order-section .btn:hover {
+    background-color: #ffffff;
+    border-radius: 35px;
+    color: #000000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px #ffffff; /* Increased red glow */
+}
+
+.order-section p {
+    color: #bbbbbb;
+    font-family: IBM;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(77, 77, 77, 0.459); /* White form background for contrast */
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #505050; /* Dark text for form labels */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 0px solid #ddd;
+    border-radius: 15px;
+    font-size: 1.1em;
+    background-color: #4e4e4e;
+    color: rgb(255, 255, 255)
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3c528f; /* Strong blue button for contrast */
+    color: #464646; /* White text */
+    border: none;
+    border-radius: 15px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    color: #000000;
+    transform: translateY(-10px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px rgba(255, 255, 255, 0.7); /* Increased red glow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .order-section h3 {
+        font-size: 1.2em;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .order-section h3 {
+        font-size: 1.2em;
+    }
+}

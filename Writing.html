@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Writing - Vivid Axis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="VIVIDAXIS.png" alt="Description of image" style="width: 95%; max-width: 250px;">
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#order">How to Order</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.querySelector('.scroll-to-bottom').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+            const bottom = document.body.scrollHeight; // Calculate the bottom of the page
+            window.scrollTo({
+                top: bottom,
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        });
+    </script>
+    
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content animate-fade">
+            <h1>Professional Writing</h1>
+            <p>Elevate your scripts with professional writing.</p>
+            <a href="#order" class="btn animate-hover">Order Now</a>
+        </div>
+        <div class="hero-image animate-slide">
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about animate-fade">
+        <h2>About Our YouTube Banner Design Service</h2>
+        <p>
+            At Vivid Axis, we provide meticulously crafted scripts designed to elevate your story and captivate your audience. A well-crafted script is the foundation of an exceptional viewing experience, and our team ensures that your narrative stands out with clarity, depth, and impact. Let us help you transform your vision into a compelling, professional script that resonates with your audience and enhances the overall storytelling process.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services animate-fade">
+        <h2>Why Choose Us?</h2>
+        <div class="services-list">
+            <div class="service animate-hover">
+                <h3>High quality scripts</h3>
+                <p>At Vivid Axis, we craft unique scripts that captivate and engage your audience, ensuring a compelling and unforgettable viewing experience.
+                </p>
+            </div>
+            <div class="service animate-hover">
+                <h3>Affordable Prices</h3>
+                <p>At Vivid Axis, our prices start at an affordable rate, helping you save money while still receiving high-quality, professional scripts.
+                </p>
+            </div>
+            <div class="service animate-hover">
+                <h3>Fast Delivery</h3>
+                <p>We provide quick turnaround times to get your script ready for your story as soon as possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+<section id="order" class="order-section animate-fade">
+    <h2>Order Your script</h2>
+    <p>Ready to elevate your story? Click below to order your unique script for just $15. Once paid via Cash App, enter your details below.</p>
+    <a href="https://cash.app/$Akshaysaip" class="btn animate-hover" target="_blank">Pay $15 via Cash App</a>
+</section>
+
+
+   <!-- Contact Form -->
+<form id="contact-form" action="https://submit-form.com/KEcFasyY0" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name" required="" />
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required="" />
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<script>
+    // Select the form
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent the form from submitting normally
+
+        // Open the submission link in a new tab
+        const newTab = window.open('https://submit-form.com/KEcFasyY0', '_blank');
+
+        // Create a FormData object to gather the form data
+        const formData = new FormData(this);
+
+        // Use fetch to send the form data asynchronously
+        fetch(this.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            // Handle success (optional)
+            console.log('Form submitted successfully.');
+        })
+        .catch(error => {
+            // Handle error (optional)
+            console.error('Error submitting form:', error);
+        });
+
+        // Add a slight delay before closing the tab (e.g., 500ms)
+        setTimeout(() => {
+            newTab.close();  // Close the newly opened tab
+        }, 500); // Delay in milliseconds
+    });
+</script>
+
+

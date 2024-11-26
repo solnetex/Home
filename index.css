@@ -1,0 +1,406 @@
+@font-face {
+    font-family: 'IBM';
+    src: url(IBMPlexSans-Bold.ttf);
+}
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: IBM;
+    background-color: #0c171f; /* Soft light green background */
+    color: #283444; /* Darker text color for better readability */
+    line-height: 1.6;
+    padding: -1;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0c171f00; /* Soft background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(100px);
+    font-family: product sans;
+}
+
+.logo-link {
+    display: inline-block; /* Make the link behave like an inline block */
+}
+
+.logo {
+    width: 95%;
+    max-width: 250px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Enlarge the logo on hover */
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display links in a row */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Add space between links */
+}
+
+.navbar .logo {
+    color: #333; /* Dark text for contrast */
+    font-size: 1.8em;
+    font-weight: 800;
+    font-family: IBM;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+
+.navbar .nav-links a {
+    color: #565656; /* White links for contrast */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
+    transition: color 0.3s ease;
+    font-family: IBM;
+}
+
+.navbar .nav-links a:hover {
+    color: #2d5372; /* Vibrant orange for hover */
+    font-family: IBM;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden; /* Ensures the video doesn’t exceed the container */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+    z-index: 1;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire background */
+    z-index: -2; /* Sends the video behind other elements */
+    
+}
+
+.tint-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency */
+    z-index: -1; /* Places the tint above the video but behind content */
+    backdrop-filter: blur(3px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensures the content is above the video and tint */
+    text-align: center;
+    color: white; /* Keeps text readable on the tinted background */
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 25px;
+    font-weight: 800;
+    color: #505050;
+    background-color: #2d53726c;
+    color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    background-color: #b4d6ff;
+    color: #565656;
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensures proper centering */
+    margin-top: 20px; /* Adds space between heading and button */
+}
+
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-out;
+}
+
+
+
+.hero .btn:hover {
+    background-color: #343d46; /* Darker shade for hover */
+    color: hsl(188, 57%, 82%);
+    cursor: crosshair;
+}
+
+/* About Section */
+#about {
+    padding: 50px 100px;
+    background-color: #0c171f; /* White background for clean section */
+    text-align: center;
+    color: #c9c9c9; /* Dark text */
+    animation: fadeIn 1.5s ease-out;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e6e6e6; /* Dark title for contrast */
+    text-shadow: 0 0 5px #ffffff2d, 0 0 10px #ffffff7a, 0 0 15px #5554547a, 0 0 2px #ffffff7a, 0 0 25px #ffffff7a, 0 0 30px #ffffff7a, 0 0 35px #ffffff7a;
+}
+
+#about p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 100px;
+    background-color: #253847;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+    filter: blur(10px); /* Initial blur effect */
+    transition: filter 0.5s ease-out; /* Smooth transition for unblur effect */
+    opacity: 0.8; /* Slightly reduce opacity to enhance the blur effect */
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffffff5d;
+    text-shadow: 0 0 5px #ffffff2d, 0 0 10px #ffffff7a, 0 0 15px #5554547a, 0 0 2px #ffffff7a, 0 0 25px #ffffff7a, 0 0 30px #ffffff7a, 0 0 35px #ffffff7a;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service {
+    background-color: rgba(121, 121, 121, 0.2); /* Partially transparent white background */
+    padding: 30px;
+    border-radius: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.178); /* Slightly transparent border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s ease-in-out; /* Smooth transition */
+    animation: fadeIn 2s ease-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.service h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ffffff62;
+}
+
+.service p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #b1b2b3;
+}
+
+.service:hover {
+    background-color: rgb(94, 125, 128);
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px #778ea0;
+    color: #000000;
+    transition: background-color 0.9s ease, transform 0.9s, box-shadow 0.3s;
+}
+
+
+
+/* CashApp Title */
+.order-section h3 {
+    font-size: 1.4em;
+    margin-top: 50px;
+    text-align: center;
+    color: #ffffff; /* Dark text */
+}
+
+.cashapp-link {
+    color: #ff7b00; /* Bright orange link color for contrast */
+    text-decoration: none;
+}
+
+.cashapp-link:hover {
+    text-decoration: underline;
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(77, 77, 77, 0.459); /* White form background for contrast */
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #505050; /* Dark text for form labels */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 0px solid #ddd;
+    border-radius: 15px;
+    font-size: 1.1em;
+    background-color: #4e4e4e;
+    color: rgb(255, 255, 255)
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3c528f; /* Strong blue button for contrast */
+    color: #464646; /* White text */
+    border: none;
+    border-radius: 15px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    color: #000000;
+    transform: translateY(-10px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px rgba(255, 255, 255, 0.7); /* Increased red glow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .order-section h3 {
+        font-size: 1.2em;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .order-section h3 {
+        font-size: 1.2em;
+    }
+}
+

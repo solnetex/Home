@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Management - Vivid Axis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SocialManage.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo-link">
+            <img src="VIVIDAXIS.png" alt="Description of image" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#order">How to Order</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.querySelector('.scroll-to-bottom').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+            const bottom = document.body.scrollHeight; // Calculate the bottom of the page
+            window.scrollTo({
+                top: bottom,
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        });
+    </script>
+    
+
+    <header class="hero">
+        <div class="hero-content animate-fade">
+            <h1>Social Media Management</h1>
+            <p>We handle the hassle of uploading for you, ensuring your content goes live at the best times for maximum engagement.</p>
+            <a href="#order" class="btn animate-hover">Order Now</a>
+        </div>
+        <div class="hero-image animate-slide">
+        </div>
+    </header>
+    
+
+    <!-- About Us Section -->
+    <section id="about" class="about animate-fade">
+        <h2>Increase views and gather attention.</h2>
+        <p>
+            At Vivid Axis, we provide expert social media management services designed to make your brand stand out. From crafting engaging content to optimizing post schedules for maximum reach, we ensure top-tier quality that leaves a lasting impression on your audience. Since your online presence is often the first thing customers notice, we guarantee strategies that drive satisfaction, engagement, and growth.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services animate-fade">
+        <h2>Why Choose Us?</h2>
+        <div class="services-list">
+            <div class="service animate-hover">
+                <h3>Strategies tailored to your brand's unique voice and goals.</h3>
+                <p>We create personalized social media strategies tailored to your brand’s voice, goals, and style, ensuring your content captivates your audience. Share your vision, and we’ll handle the rest!</p>
+            </div>
+            <div class="service animate-hover">
+                <h3>Affordable Prices</h3>
+                <p>Get a professional social media strategy tailored to your brand for just $10!</p>
+            </div>
+            <div class="service animate-hover">
+                <h3>Easy to set up.</h3>
+                <p>Enjoy unmatched convenience with our easy-to-use service! Simply contact us below to get started—it only takes minutes to set up, and your purchase lasts an entire month. We handle everything so you can sit back and focus on what matters most!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+<section id="order" class="order-section animate-fade">
+    <h2>Order your social media management serivice.</h2>
+    <p>Ready to elevate your brand? Click below to get started with our expert social media management for just $10. Once paid via Cash App, enter your details below, and we’ll take care of the rest!</p>
+    <a href="https://cash.app/$Akshaysaip" class="btn animate-hover" target="_blank">Pay $10 via Cash App</a>
+</section>
+
+
+   <!-- Contact Form -->
+<form id="contact-form" action="https://submit-form.com/KEcFasyY0" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name" required="" />
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required="" />
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<script>
+    // Select the form
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent the form from submitting normally
+
+        // Open the submission link in a new tab
+        const newTab = window.open('https://submit-form.com/KEcFasyY0', '_blank');
+
+        // Create a FormData object to gather the form data
+        const formData = new FormData(this);
+
+        // Use fetch to send the form data asynchronously
+        fetch(this.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            // Handle success (optional)
+            console.log('Form submitted successfully.');
+        })
+        .catch(error => {
+            // Handle error (optional)
+            console.error('Error submitting form:', error);
+        });
+
+        // Add a slight delay before closing the tab (e.g., 500ms)
+        setTimeout(() => {
+            newTab.close();  // Close the newly opened tab
+        }, 500); // Delay in milliseconds
+    });
+</script>
+
+

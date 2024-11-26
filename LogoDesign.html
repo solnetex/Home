@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo design - Vivid Axis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="VIVIDAXIS.png" alt="Description of image" style="width: 95%; max-width: 250px;">
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#order">How to Order</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.querySelector('.scroll-to-bottom').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+            const bottom = document.body.scrollHeight; // Calculate the bottom of the page
+            window.scrollTo({
+                top: bottom,
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        });
+    </script>
+    
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content animate-fade">
+            <h1>Logo design</h1>
+            <p>Elevate your business with a professional logo.</p>
+            <a href="#order" class="btn animate-hover">Order Now</a>
+        </div>
+        <div class="hero-image animate-slide">
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about animate-fade">
+        <h2>About Our logo Design Service</h2>
+        <p>
+            At Vivid Axis, we offer custom business logo designs that help your business stand out. The business logo is the first thing viewers see, so make sure it represents your brand perfectly.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services animate-fade">
+        <h2>Why Choose Us?</h2>
+        <div class="services-list">
+            <div class="service animate-hover">
+                <h3>Custom Designs</h3>
+                <p>We design unique logos tailored to your businesses theme and style, making sure it captures your audience's attention.</p>
+            </div>
+            <div class="service animate-hover">
+                <h3>Affordable Prices</h3>
+                <p>Get a professional logo design for just $15.</p>
+            </div>
+            <div class="service animate-hover">
+                <h3>Fast Delivery</h3>
+                <p>We provide quick turnaround times to get your logo ready for your business as soon as possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+<section id="order" class="order-section animate-fade">
+    <h2>Order Your businesses logo</h2>
+    <p>Ready to elevate your business? Click below to order your profesional logo for just $15. Once paid via Cash App, enter your details below.</p>
+    <a href="https://cash.app/$Akshaysaip" class="btn animate-hover" target="_blank">Pay $15 via Cash App</a>
+</section>
+
+
+   <!-- Contact Form -->
+<form id="contact-form" action="https://submit-form.com/KEcFasyY0" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name" required="" />
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required="" />
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<script>
+    // Select the form
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent the form from submitting normally
+
+        // Open the submission link in a new tab
+        const newTab = window.open('https://submit-form.com/KEcFasyY0', '_blank');
+
+        // Create a FormData object to gather the form data
+        const formData = new FormData(this);
+
+        // Use fetch to send the form data asynchronously
+        fetch(this.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            // Handle success (optional)
+            console.log('Form submitted successfully.');
+        })
+        .catch(error => {
+            // Handle error (optional)
+            console.error('Error submitting form:', error);
+        });
+
+        // Add a slight delay before closing the tab (e.g., 500ms)
+        setTimeout(() => {
+            newTab.close();  // Close the newly opened tab
+        }, 500); // Delay in milliseconds
+    });
+</script>
+
+

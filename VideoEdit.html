@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing - Vivid Axis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="VideoEdit.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo-link">
+            <img src="VIVIDAXIS.png" alt="Description of image" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="Home.html#about">About Us</a></li>
+            <li><a href="Home.html#services">Services</a></li>
+            <li><a href="#order" class="scroll-to-bottom">How to Order</a></li>
+
+        </ul>
+    </nav>
+
+    <script>
+        document.querySelector('.scroll-to-bottom').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+            const bottom = document.body.scrollHeight; // Calculate the bottom of the page
+            window.scrollTo({
+                top: bottom,
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        });
+    </script>
+    
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content animate-fade">
+            <h1>Video Editing</h1>
+            <p>Enhance your content with professional video editing services.</p>
+            <a href="#order" class="btn animate-hover">Order Now</a>
+        </div>
+        <div class="hero-image animate-slide">
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about animate-fade">
+        <h2>About Our Video Editing Service</h2>
+        <p>
+            Vivid Axis offers high-quality video editing to help bring your creative vision to life. Whether you need simple touch-ups or complex edits, our team ensures your content looks professional and polished.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services animate-fade">
+        <h2>What We Offer</h2>
+        <div class="services-list">
+            <div class="service animate-hover">
+                <h3>Photo Editing</h3>
+                <p>We provide professional editing to make your videos stand out, whether it's color correction, retouching, or special effects.</p>
+            </div>
+            <div class="service animate-hover">
+                <h3>Video Editing</h3>
+                <p>Enhance your video content with seamless transitions, effects, and audio syncing to keep your audience engaged.</p>
+            </div>
+            <div class="service animate-hover">
+                <h3>Content Enhancement</h3>
+                <p>Transform your raw footage or photos into stunning final products with our creative and technical skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section animate-fade">
+        <h2>Order Your Editing Service</h2>
+        <p>Click below to place your order for professional photo and video editing. Once payed via cashapp, enter your details below.</p>
+        <a href="https://cash.app/$Akshaysaip" class="btn animate-hover" target="_blank">Pay $20 via Cash App</a>
+</section>
+
+ <!-- Contact Form -->
+<form id="contact-form" action="https://submit-form.com/KEcFasyY0" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name" required="" />
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required="" />
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<script>
+    // Select the form
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent the form from submitting normally
+
+        // Open the submission link in a new tab
+        const newTab = window.open('https://submit-form.com/KEcFasyY0', '_blank');
+
+        // Create a FormData object to gather the form data
+        const formData = new FormData(this);
+
+        // Use fetch to send the form data asynchronously
+        fetch(this.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            // Handle success (optional)
+            console.log('Form submitted successfully.');
+        })
+        .catch(error => {
+            // Handle error (optional)
+            console.error('Error submitting form:', error);
+        });
+
+        // Add a slight delay before closing the tab (e.g., 500ms)
+        setTimeout(() => {
+            newTab.close();  // Close the newly opened tab
+        }, 500); // Delay in milliseconds
+    });
+</script>
+
+
