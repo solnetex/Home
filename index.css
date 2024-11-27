@@ -28,17 +28,27 @@ body {
     position: sticky;
     top: 20px; /* Adjusted top to move the navbar down */
     z-index: 1000;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, border-radius 0.3s ease, max-width 0.3s ease;
     backdrop-filter: blur(100px);
     font-family: 'Product Sans', sans-serif;
     border-radius: 100px;
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto; /* Center the navbar */
     border: 2px solid #2d53723f; /* Add a border */
 }
 
+/* Navbar hover effect */
+.navbar:not(.navbar-full):hover {
+    max-width: 1200px;
+}
 
+.navbar-full {
+    max-width: 100%; /* Full width */
+    border-radius: 0; /* Remove border-radius */
+    top: 0; /* Ensure it aligns at the top */
+}
 
+/* Logo */
 .logo-link {
     display: inline-block;
 }
@@ -53,6 +63,7 @@ body {
     transform: scale(1.05);
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -83,6 +94,17 @@ body {
     text-shadow: 0 0 10px rgba(45, 83, 114, 0.8), 0 0 20px rgba(45, 83, 114, 0.6), 0 0 30px rgba(45, 83, 114, 0.4);
     font-family: 'IBM', sans-serif;
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .nav-links {
+        display: ; /* Hide navigation links */
+        visibility: none;
+    }
+}
+
+
+
 
 
 /* Hero Section */

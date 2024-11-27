@@ -17,6 +17,8 @@
             <li><a href="#services">Services</a></li>
             <li><a href="Apply.html">Apply</a></li>
         </ul>
+        </nav>
+        <script src="Nav.js"></script>
         
     </nav>
     <link rel="preload" href="moreimg/forgefram_1.2.1.jpg" as="image">
@@ -138,5 +140,42 @@
     });
 </script>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <!-- Navbar and page content go here -->
+    <div class="navbar">
+        <!-- Navbar Content -->
+    </div>
+
+    <script>
+        document.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    const isMobile = window.matchMedia('(max-width: 768px)').matches; // Adjust max-width for your breakpoint
+
+    if (!isMobile) {
+        if (window.scrollY === 0) {
+            navbar.classList.add('navbar-full');
+        } else {
+            navbar.classList.remove('navbar-full');
+        }
+    } else {
+        // Optional: Remove the class entirely for mobile if it exists
+        navbar.classList.remove('navbar-full');
+    }
+});
+
+// Trigger the event on page load to ensure the initial state is correct.
+document.dispatchEvent(new Event('scroll'));
+
+    </script>
+</body>
+</html>
 
 
