@@ -226,7 +226,7 @@ body {
 /* Services Section */
 #services {
     padding: 50px 100px;
-    background-color: #253847;
+    background-color: #0c171f;
     text-align: center;
     animation: fadeIn 1.5s ease-out;
     filter: blur(10px); /* Initial blur effect */
