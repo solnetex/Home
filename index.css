@@ -422,7 +422,7 @@ form button:hover {
 
     .service {
         padding: 20px; /* Reduce padding inside service cards */
-        border-radius: 50px; /* Adjust border radius */
+        border-radius: 70px; /* Adjust border radius */
     }
 
     .service h3 {
