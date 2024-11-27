@@ -404,3 +404,46 @@ form button:hover {
     }
 }
 
+/* Responsive Design for Services Section */
+@media (max-width: 768px) {
+    #services {
+        padding: 30px 20px; /* Reduce padding for smaller screens */
+    }
+
+    #services h2 {
+        font-size: 2em; /* Reduce heading size */
+        margin-bottom: 30px;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+        gap: 20px; /* Reduce gap between items */
+    }
+
+    .service {
+        padding: 20px; /* Reduce padding inside service cards */
+        border-radius: 50px; /* Adjust border radius */
+    }
+
+    .service h3 {
+        font-size: 1.5em; /* Reduce service title size */
+    }
+
+    .service p {
+        font-size: 1em; /* Adjust paragraph size */
+    }
+}
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Hide all links */
+    .navbar .nav-links a {
+        display: none;
+    }
+
+    /* Show only the "Apply" link */
+    .navbar .nav-links a[href="Apply.html"] {
+        display: inline-block;
+    }
+}
