@@ -361,3 +361,12 @@ form button:hover {
         display: none; /* Hide nav links on mobile devices */
     }
 }
+
+@media (max-width: 600px) {
+    
+
+    .hero {
+        background-image: none;
+        height: auto;
+    }
+}

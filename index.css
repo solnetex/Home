@@ -101,7 +101,13 @@ body {
         display: ; /* Hide navigation links */
         visibility: none;
     }
+
+    .navbar {
+        visibility: none;
+        display: none;
+    }
 }
+
 
 
 
