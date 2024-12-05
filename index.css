@@ -478,3 +478,11 @@ form button:hover {
         display: inline-block;
     }
 }
+
+@media (max-width: 600px) {
+    
+
+    .hero h1 {
+        visibility: hidden;
+    }
+}
