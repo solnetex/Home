@@ -368,5 +368,6 @@ form button:hover {
     .hero {
         background-image: none;
         height: auto;
+        text-shadow: 0 0 5px #ffffff2d, 0 0 10px #ffffff7a, 0 0 15px #5554547a, 0 0 2px #ffffff7a, 0 0 25px #ffffff7a, 0 0 30px #ffffff7a, 0 0 35px #ffffff7a;
     }
 }

@@ -105,6 +105,12 @@ body {
     .navbar {
         visibility: visible;
         display: visible;
+        align-items: center;
+        max-width: 94%;
+        
+    }
+    .navbar:not(.navbar-full):hover {
+        max-width: 94%;
     }
 }
 
@@ -210,7 +216,7 @@ body {
 /* About Section */
 #about {
     padding: 50px 100px;
-    background-color: #0c171f; /* White background for clean section */
+    background-color: #0c171f; 
     text-align: center;
     color: #c9c9c9; /* Dark text */
     animation: fadeIn 1.5s ease-out;
