@@ -220,6 +220,7 @@ body {
     text-align: center;
     color: #c9c9c9; /* Dark text */
     animation: fadeIn 1.5s ease-out;
+    max-width: fit-content;
 }
 
 #about h2 {
@@ -496,3 +497,5 @@ form button:hover {
         visibility: hidden;
     }
 }
+
+
