@@ -103,8 +103,8 @@ body {
     }
 
     .navbar {
-        visibility: none;
-        display: none;
+        visibility: visible;
+        display: visible;
     }
 }
 
@@ -481,6 +481,10 @@ form button:hover {
 
 @media (max-width: 600px) {
     
+
+    .navbar {
+        visibility: visible;
+    }
 
     .hero h1 {
         visibility: hidden;
