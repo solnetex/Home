@@ -213,15 +213,16 @@ body {
     cursor: crosshair;
 }
 
-/* About Section */
 #about {
-    padding: 50px 100px;
+    padding: 50px 20px; /* Reduced horizontal padding for full width */
     background-color: #0c171f; 
-    text-align: center;
-    color: #c9c9c9; /* Dark text */
+    color: #c9c9c9;
     animation: fadeIn 1.5s ease-out;
-    max-width: fit-content;
+    text-align: center;
+    width: 100%; /* Makes the container take full width */
+    box-sizing: border-box; /* Ensures padding doesn't exceed the viewport */
 }
+
 
 #about h2 {
     font-size: 2.5em;
