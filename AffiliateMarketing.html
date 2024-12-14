@@ -31,8 +31,8 @@
 
     <header class="hero">
         <div class="hero-content animate-fade">
-            <h1>Affiliate Marketing</h1>
-            <p>Grow your business with our affordable affiliate marketing program, designed to deliver measurable results while keeping costs low.</p>
+            <h1>Advertising and Marketing Solutions</h1>
+            <p>Grow your business with our affordable advertising marketing program, designed to deliver measurable results while keeping costs low.</p>
             <a href="#order" class="btn animate-hover">Order Now</a>
         </div>
         <div class="hero-image animate-slide">
@@ -42,7 +42,7 @@
 
     <!-- About Us Section -->
     <section id="about" class="about animate-fade">
-        <h2>Elevate your business with our affiliate marketing services, designed to drive traffic, increase sales, and maximize your ROI with cost-effective strategies.</h2>
+        <h2>Elevate your business with our marketing services, designed to drive traffic, increase sales, and maximize your ROI with cost-effective strategies.</h2>
         <p>
             At Vivid Axis, we offer customized affiliate marketing strategies that help your business reach new heights. Our tailored approach ensures maximum exposure and results, driving traffic and boosting sales while keeping costs efficient. We focus on creating campaigns that engage your audience, build trust, and ultimately increase conversions, all with the highest standards of performance.
         </p>
@@ -54,7 +54,7 @@
         <div class="services-list">
             <div class="service animate-hover">
                 <h3>Low priced</h3>
-                <p>We create customized affiliate marketing strategies tailored to your brand, goals, and target audience, ensuring maximum engagement and results at an affordable price. Our approach is designed to capture attention, drive traffic, and boost conversions, all while keeping your budget in mind.</p>
+                <p>We create customized marketing strategies tailored to your brand, goals, and target audience, ensuring maximum engagement and results at an affordable price. Our approach is designed to capture attention, drive traffic, and boost conversions, all while keeping your budget in mind.</p>
             </div>
             <div class="service animate-hover">
                 <h3>Easy to sign up</h3>
@@ -77,16 +77,31 @@
 </section>
 
 
-   <!-- Contact Form -->
 <form id="contact-form" action="https://submit-form.com/KEcFasyY0" method="POST">
     <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name" required="" />
+    <input type="text" id="name" name="name" placeholder="Name" required />
+    
     <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Email" required="" />
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Message" required=""></textarea>
-    <button type="submit">Send</button>
+    <input type="email" id="email" name="email" placeholder="Email" required />
+    
+    <div id="message-section">
+        <textarea id="message" name="message" placeholder="Message" required style="display: none;"></textarea>
+        <button type="button" id="advertising-button">Send</button>
+    </div>
 </form>
+
+<script>
+    document.getElementById("advertising-button").addEventListener("click", function() {
+        const form = document.getElementById("contact-form");
+        const messageInput = document.getElementById("message");
+
+        // Set the message value to "Advertising"
+        messageInput.value = "Advertising";
+
+        // Submit the form
+        form.submit();
+    });
+</script>
 
 <script>
     // Select the form

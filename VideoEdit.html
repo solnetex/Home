@@ -74,16 +74,31 @@
         <a href="https://cash.app/$Akshaysaip" class="btn animate-hover" target="_blank">Pay $20 via Cash App</a>
 </section>
 
- <!-- Contact Form -->
 <form id="contact-form" action="https://submit-form.com/KEcFasyY0" method="POST">
     <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name" required="" />
+    <input type="text" id="name" name="name" placeholder="Name" required />
+    
     <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Email" required="" />
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Message" required=""></textarea>
-    <button type="submit">Send</button>
+    <input type="email" id="email" name="email" placeholder="Email" required />
+    
+    <div id="message-section">
+        <textarea id="message" name="message" placeholder="Message" required style="display: none;"></textarea>
+        <button type="button" id="advertising-button">Send</button>
+    </div>
 </form>
+
+<script>
+    document.getElementById("advertising-button").addEventListener("click", function() {
+        const form = document.getElementById("contact-form");
+        const messageInput = document.getElementById("message");
+
+        // Set the message value to "Advertising"
+        messageInput.value = "Video Editing";
+
+        // Submit the form
+        form.submit();
+    });
+</script>
 
 <script>
     // Select the form
