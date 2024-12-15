@@ -1,0 +1,111 @@
+<!-- Pictures Section -->
+<section id="pictures" class="pictures animate-scroll">
+    <h2>Pictures</h2>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-item" style="background-image: url('moreimg/VividPic1.png');"> </div>
+            <div class="gallery-item" style="background-image: url('moreimg/VA\ mini.png');"> </div>
+            <div class="gallery-item" style="background-image: url('moreimg/VA\ mini.png');"> </div>
+            <div class="gallery-item" style="background-image: url('moreimg/VA\ mini.png');"> </div>
+            <div class="gallery-item" style="background-image: url('moreimg/VA\ mini.png');"> </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* General Styles */
+    .button {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #000000;
+        background-color: #2a363f;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #0c171f;
+        border-radius: 10px;
+    }
+
+    /* Pictures Section Styles */
+    .pictures {
+        margin-top: 2em;
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 10px;
+        height: 500px;
+        position: relative;
+    }
+
+    .gallery-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+        border-radius: 25px;
+        max-height: 6100px;
+        background-color: #000;
+        position: relative;
+    }
+
+    .gallery {
+        display: flex;
+        gap: 10px;
+    }
+
+    .gallery-item {
+        display: inline-block;
+        width: 500px;
+        height: 400px;
+        background-color: #2a363f;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 150px;
+        border-radius: 50px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+        animation: scroll linear;
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.02);
+    }
+
+    /* Scrollbar Styling */
+    .gallery-container::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .gallery-container::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        border-radius: 10px;
+    }
+
+    .gallery-container::-webkit-scrollbar-track {
+        background-color: #000000;
+    }
+
+    /* Fading effect */
+    .gallery-container::before, .gallery-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        z-index: 2;
+    }
+
+    .gallery-container::before {
+        left: 0;
+        background: linear-gradient(to right, #000000, transparent);
+    }
+
+    .gallery-container::after {
+        right: 0;
+        background: linear-gradient(to left, #000000, transparent);
+    }
+</style>
