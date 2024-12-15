@@ -29,7 +29,7 @@ body {
     top: 20px; /* Adjusted top to move the navbar down */
     z-index: 1000;
     transition: background-color 0.3s ease, border-radius 0.3s ease, max-width 0.3s ease;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
     font-family: 'Product Sans', sans-serif;
     border-radius: 100px;
     max-width: 600px;
@@ -44,7 +44,7 @@ body {
 
 .navbar-full {
     max-width: 100%; /* Full width */
-    border-radius: 0; /* Remove border-radius */
+    border-radius: 20px; /* Remove border-radius */
     top: 0; /* Ensure it aligns at the top */
 }
 
@@ -194,7 +194,6 @@ body {
     font-size: 4em;
     margin-bottom: 25px;
     font-weight: 800;
-    color: #505050;
     background-color: #1030316c;
     color: #ffffff;
     padding: 20px 30px;
@@ -202,20 +201,38 @@ body {
     display: inline-block;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    animation: fadeInUp 2s ease forwards; /* Apply the fade-in and slide-up animation */
 }
+
+/* Keyframes for the fade-in and slide-up animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start 5px lower */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
 
 .hero .btn {
     padding: 12px 25px;
-    background-color: #b4d6ff;
+    background-color: #50505000;
+    backdrop-filter: blur(50px);
     color: #284242;
     text-decoration: none;
     border-radius: 35px;
     font-size: 1.1em;
     font-weight: 600;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     display: inline-block; /* Ensures proper centering */
     margin-top: 20px; /* Adds space between heading and button */
+    border: 2px solid #a8a8a818; /* Add a border */
 }
+
 
 
 .hero p {
@@ -227,9 +244,9 @@ body {
 
 
 .hero .btn:hover {
-    background-color: #343d46; /* Darker shade for hover */
+    background-color: rgba(52, 61, 70, 0.432)5e; /* Darker shade for hover */
     color: hsl(188, 57%, 82%);
-    cursor: crosshair;
+    cursor: ;
 }
 
 #about {

@@ -13,7 +13,7 @@
             <img src="VIVIDAXIS.png" alt="Description of image" class="logo">
         </a>
         <ul class="nav-links">
-            <li><a href="#order">How to Order</a></li>
+           
         </ul>
     </nav>
 
@@ -69,70 +69,4 @@
         </div>
     </section>
 
-    <!-- Order Section -->
-<section id="order" class="order-section animate-fade">
-    <h2>Order Your script</h2>
-    <p>Ready to elevate your story? Click below to order your unique script for just $15. Once paid via Cash App, enter your details below.</p>
-    <a href="https://cash.app/$Akshaysaip" class="btn animate-hover" target="_blank">Pay $15 via Cash App</a>
-</section>
-
-
-<form id="contact-form" action="https://submit-form.com/KEcFasyY0" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name" required />
-    
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Email" required />
-    
-    <div id="message-section">
-        <textarea id="message" name="message" placeholder="Message" required style="display: none;"></textarea>
-        <button type="button" id="advertising-button">Send</button>
-    </div>
-</form>
-
-<script>
-    document.getElementById("advertising-button").addEventListener("click", function() {
-        const form = document.getElementById("contact-form");
-        const messageInput = document.getElementById("message");
-
-        // Set the message value to "Advertising"
-        messageInput.value = "Profesional Writing";
-
-        // Submit the form
-        form.submit();
-    });
-</script>
-
-<script>
-    // Select the form
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();  // Prevent the form from submitting normally
-
-        // Open the submission link in a new tab
-        const newTab = window.open('https://submit-form.com/KEcFasyY0', '_blank');
-
-        // Create a FormData object to gather the form data
-        const formData = new FormData(this);
-
-        // Use fetch to send the form data asynchronously
-        fetch(this.action, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            // Handle success (optional)
-            console.log('Form submitted successfully.');
-        })
-        .catch(error => {
-            // Handle error (optional)
-            console.error('Error submitting form:', error);
-        });
-
-        // Add a slight delay before closing the tab (e.g., 500ms)
-        setTimeout(() => {
-            newTab.close();  // Close the newly opened tab
-        }, 500); // Delay in milliseconds
-    });
-</script>
-
-
+   
