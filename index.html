@@ -36,7 +36,7 @@
     <!-- Hero Section -->
 <header class="hero">
     <video class="hero-video" autoplay loop muted playsinline>
-        <source src="VIVID AXIS.mp4" type="video/mp4">
+        HTML VIDEO HERE
     </video>
     <div class="tint-overlay"></div>
     <div class="hero-content animate-fade">
@@ -44,18 +44,357 @@
         <p>Vivid Axis delivers affordable, high-quality designs for YouTubers and businesses.</p>
         <a href="#services" class="btn animate-hover">Discover Services</a>
     </div>
+    <div class="fade-bottom"></div>
 </header>
+
+<style>
+    /* Hero Section Styles */
+    .hero {
+        position: relative;
+        height: 100vh; /* Adjust the height as needed */
+        background: radial-gradient(circle at bottom, #2e74a7, #000);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        z-index: 2;
+    }
+
+    .tint-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+        z-index: 1;
+    }
+
+    .fade-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 500px; /* Adjust the height of the fade effect as needed */
+        background: linear-gradient(to bottom, transparent, #000000);
+        z-index: 1;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #2a363f;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #5e7d80;
+        border-radius: 10px;
+    }
+</style>
+
 
 
     <!-- About Us Section -->
-    <section id="about" class="about animate-fade">
-        <h2>About Us</h2>
-        <p>
-            At Vivid Axis, we’re passionate about making businesses, YouTubers, or products accessible to everyone. Whether you’re looking for professional YouTube banners, engaging thumbnails, or standout logos, we’ve got you covered. Our focus is on delivering value without compromising on quality. In addition to our design services, we help companies connect with new audiences and expand their reach by partnering with content creators and strategically placing promotional materials to boost visibility and drive growth.    </section>
+<section id="about" class="about animate-fade">
+    <h2>About Us</h2>
+    <div class="about-content">
+        <div class="gradient-box">
+            <div class="content-background">
+                <p>
+                    At Vivid Axis, we specialize in helping businesses grow by connecting them with their target audiences through strategic marketing. As a marketing agency, we focus on driving visibility and growth by partnering with content creators, managing promotional campaigns, and utilizing effective marketing strategies. In addition to our core services, we offer design solutions such as YouTube banners, engaging thumbnails, and standout logos to further enhance brand identity and online presence. Whether you're looking to expand your reach or improve your digital assets, Vivid Axis is here to support your growth every step of the way.
+                </p>
+                <a href="AffiliateMarketing.html" class="button">Get started</a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<style>
+    /* About Us Section Styles */
+    .about {
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .about-content {
+        display: inline-block;
+        position: relative;
+    }
+
+    .gradient-box {
+        background: linear-gradient(to right, #57b0f8, #292929);
+        padding: 2px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .content-background {
+        background: #000000;
+        border-radius: 8px;
+        padding: 20px;
+        color: #fff;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #354e61;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #5e7d80;
+        border-radius: 10px;
+    }
+</style>
+
+<!-- Pictures Section -->
+<section id="pictures" class="pictures animate-scroll">
+    <h2>Pictures</h2>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-item" style="background-image: url('moreimg/VividPic1.png');"> </div>
+            <div class="gallery-item" style="background-image: url('moreimg/VA\ mini.png');"> </div>
+            <div class="gallery-item" style="background-image: url('moreimg/VA\ mini.png');"> </div>
+            <div class="gallery-item" style="background-image: url('moreimg/VA\ mini.png');"> </div>
+            <div class="gallery-item" style="background-image: url('moreimg/VA\ mini.png');"> </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    /* General Styles */
+    .button {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #000000;
+        background-color: #2a363f;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #0c171f;
+        border-radius: 10px;
+    }
+
+    /* Pictures Section Styles */
+    .pictures {
+        margin-top: 2em;
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 10px;
+        height: 500px;
+        position: relative;
+    }
+
+    .gallery-container {
+        overflow-x: hidden; /* Hide horizontal scrollbar and prevent scrolling */
+        white-space: nowrap;
+        padding: 10px;
+        border-radius: 25px;
+        max-height: 6100px;
+        background-color: #000;
+        position: relative;
+        user-select: none; /* Disable text selection */
+        pointer-events: none; /* Disable pointer events */
+    }
+
+    .gallery {
+        display: flex;
+        gap: 10px;
+    }
+
+    .gallery-item {
+        display: inline-block;
+        width: 500px;
+        height: 400px;
+        background-color: #2a363f;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 150px;
+        border-radius: 50px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+        animation: scroll linear;
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.02);
+    }
+
+    /* Scrollbar Styling */
+    .gallery-container::-webkit-scrollbar {
+        display: none; /* Hide scrollbar */
+    }
+
+    /* Fading effect */
+    .gallery-container::before, .gallery-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        z-index: 2;
+    }
+
+    .gallery-container::before {
+        left: 0;
+        background: linear-gradient(to right, #000000, transparent);
+    }
+
+    .gallery-container::after {
+        right: 0;
+        background: linear-gradient(to left, #000000, transparent);
+    }
+</style>
+
+<script>
+    // JavaScript for seamless scrolling
+    const gallery = document.querySelector('.gallery');
+    const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+    const totalWidth = galleryItems[0].offsetWidth * galleryItems.length;
+
+    // Clone the gallery items to make the scrolling seamless
+    function cloneItems() {
+        galleryItems.forEach(item => {
+            const clone = item.cloneNode(true);
+            gallery.appendChild(clone);
+        });
+    }
+
+    function startScrolling() {
+        let scrollAmount = 0;
+        function step() {
+            scrollAmount += 1; // Adjust the speed here
+            if (scrollAmount >= totalWidth) {
+                gallery.style.transform = 'translateX(0)';
+                scrollAmount = 0;
+            } else {
+                gallery.style.transform = `translateX(-${scrollAmount}px)`;
+            }
+            requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+    }
+
+    cloneItems();
+    startScrolling();
+</script>
+
+
+
+<!-- Why Us Section -->
+<section id="why-us" class="why-us">
+    <h2>Why Us?</h2>
+    <div class="why-us-container">
+      <!-- Box 1 -->
+      <div class="why-us-box left-box">
+        <h3>Other Agencies</h3>
+        <ul>
+          <li>&#10006; Slow communication</li>
+          <li>&#10006; Hidden processes</li>
+          <li>&#10006; Inconsistent results</li>
+          <li>&#10006; Limited expertise</li>
+          <li>&#10006; Outsourced talent</li>
+        </ul>
+      </div>
+      <!-- Box 2 -->
+      <div class="why-us-box right-box">
+        <h3>Vivid Axis</h3>
+        <ul>
+          <li>&#10004; Fast, proactive communication</li>
+          <li>&#10004; Full transparency</li>
+          <li>&#10004; Reliable, proven results</li>
+          <li>&#10004; Expert-level strategies</li>
+          <li>&#10004; Decades of experience</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  /**** Why Us Section Styles ****/
+  .why-us {
+    margin-top: 2em;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #fff;
+  }
+  .why-us h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+  }
+  .why-us-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .why-us-box {
+    background: #2a363f;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+  }
+  .why-us-box:hover {
+    transform: scale(1.02);
+  }
+  .left-box {
+    background: linear-gradient(to right, #0c0c0c, #0c0c0c);
+    border: 2px solid #2929293f;
+  }
+  .right-box {
+    background: linear-gradient(to right, #000000, #64a8da);
+    
+  }
+  .why-us-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  .why-us-box ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+  }
+  .why-us-box li {
+    margin: 10px 0;
+  }
+  .why-us-box li::before {
+    margin-right: 8px;
+  }
+  </style>
+  
+
+            
   <!-- Services Section -->
 <section id="services" class="services animate-fade">
-    <h2>Our Services</h2>   
+    <h2>Explore more services designed to elevate your brand and enhance your online presence.</h2>   
     <div class="services-list">
         <a href="Custom High Quality Models.html" class="service animate-hover">
             <h3>Custom 3D models!</h3>
@@ -73,17 +412,9 @@
             <h3>YouTube Thumbnail Design</h3>
             <p>Catch viewers’ attention with custom thumbnails for just $8!</p>
         </a>
-        <a href="Motion.html" class="service animate-hover">
-            <h3>Motion graphics</h3>
-            <p>Fun looking graphics to add a glorius touch to your videos for just $20!</p>
-        </a>
         <a href="Writing.html" class="service animate-hover">
             <h3>Professional Writing</h3>
             <p>Profesional writing to enhance your story for just $15</p>
-        </a>
-        <a href="AffiliateMarketing.html" class="service animate-hover">
-            <h3>Affiliate Marketing Services</h3>
-            <p>Affiliate marketing services to boost your brand, starting at just $15.</p>
         </a>
     </a>
     <a href="Ytban.html" class="service animate-hover">
