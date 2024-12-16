@@ -396,7 +396,7 @@ body {
 }
 
 .order-section {
-    background: radial-gradient(circle at bottom,#00eeff, #54cdfd, #99e1f7, #00000041, #000000, #000000, #000000);
+    
 }
 
 .FormTint {
@@ -418,6 +418,7 @@ form {
     border-radius: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #333;
 }
 
 form label {
@@ -435,20 +436,23 @@ form textarea {
     border: 0px solid #ddd;
     border-radius: 15px;
     font-size: 1.1em;
-    background-color: #4e4e4e;
+    background-color: #4e4e4e34;
+    resize: none;
+    border: 1px solid #333;
     color: rgb(255, 255, 255)
 }
 
 form button {
     width: 100%;
     padding: 15px;
-    background-color: #3c528f; /* Strong blue button for contrast */
-    color: #464646; /* White text */
+    background-color: #31394e4d; /* Strong blue button for contrast */
+    color: #ffffff; /* White text */
     border: none;
     border-radius: 15px;
     font-size: 2em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #333;
 }
 
 form button:hover {
@@ -456,6 +460,7 @@ form button:hover {
     color: #000000;
     transform: translateY(-10px);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px rgba(255, 255, 255, 0.7); /* Increased red glow */
+    border: none;
 }
 
 /* Responsive Design */
