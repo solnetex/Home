@@ -469,7 +469,7 @@
                 <span class="icon">+</span>
             </button>
             <div class="faq-answer">
-                <p>We offer video editing, thumbnail design, management & strategy services. Although our focus is typically YouTube, we can help you scale and produce content for any and all platforms you need.</p>
+                <p>We offer business stratagies/marketing and social media management. Both business stratagies/marketing and social media management come with additional services tailored for your needs such as video editing, logo design, scripting, photo editing and more.</p>
             </div>
         </div>
         <!-- FAQ Item 2 -->
@@ -623,8 +623,62 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+</style>
 
+<!-- Get Started Section -->
+<section id="get-started" class="get-started">
+    <div class="get-started-container">
+        <div class="get-started-box">
+            <h2>Get Started</h2>
+            <p>Ready to take your content to the next level? Whether you're looking for professional video editing, graphic design, or marketing strategies, we are here to help you grow and succeed. Start your journey with us today!</p>
+            <a href="https://ec97vn565cp.typeform.com/to/gXAfMZNx" class="get-started-button" target="_blank">Get Started</a>
+        </div>
+    </div>
+</section>
 
+<style>
+    /* Get Started Section */
+    .get-started {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .get-started-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #4747470e;
+        border: 1px solid #333;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .get-started-box h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .get-started-box p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .get-started-button {
+        display: inline-block;
+        background: #5a5a5a25;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        border-radius: 30px;
+        border: 1px solid #333;
+    }
+
+    .get-started-button:hover {
+        background: #9b9b9b33;
+    }
 </style>
 
 <!-- JavaScript -->
@@ -679,14 +733,19 @@
 
     <!-- Title for Form -->
     <section id="order" class="order-section">
-        <div class="tint-overlay"></div>
+        <div class="FormTint"></div>
         <div class="fade"></div>
         <h3>Need help? Contact us here!
             
 
   <!-- Contact Form -->
    
-<form id="contact-form" action="https://submit-form.com/KEcFasyY0" method="POST">
+<form id="contact-form" action="https://submit-form.com/1WE9OzEEk" method="POST">
+    <input
+    type="hidden"
+    name="_redirect"
+    value="https://vivid-axis.github.io/Home"
+  />
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Name" required="" />
     <label for="email">Email</label>
@@ -695,38 +754,6 @@
     <textarea id="message" name="message" placeholder="Message" required=""></textarea>
     <button type="submit">Send</button>
 </form>
-
-<script>
-    // Select the form
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();  // Prevent the form from submitting normally
-
-        // Open the submission link in a new tab
-        const newTab = window.open('https://submit-form.com/KEcFasyY0', '_blank');
-
-        // Create a FormData object to gather the form data
-        const formData = new FormData(this);
-
-        // Use fetch to send the form data asynchronously
-        fetch(this.action, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            // Handle success (optional)
-            console.log('Form submitted successfully.');
-        })
-        .catch(error => {
-            // Handle error (optional)
-            console.error('Error submitting form:', error);
-        });
-
-        // Add a slight delay before closing the tab (e.g., 500ms)
-        setTimeout(() => {
-            newTab.close();  // Close the newly opened tab
-        }, 500); // Delay in milliseconds
-    });
-</script>
 
 <script>
     let scrollVelocity = 0; // The scroll speed
