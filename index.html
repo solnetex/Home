@@ -130,6 +130,32 @@
         background: linear-gradient(to bottom, transparent, #000000);
         z-index: 1;
     }
+
+    
+</style>
+
+<style>
+    @media (max-width: 600px) {.gallery-container::before, .gallery-container::after {
+            opacity: 30%;
+        }
+
+        .hero {
+            background: url('moreimg/VividPic1.png') no-repeat center center/cover;
+            backdrop-filter: blur(0px);
+            background-size: contain;
+        }
+
+        .tint-overlay {
+            backdrop-filter: none;
+        }
+
+        .hero::before {
+            background: none;
+        }
+        .hero::after {
+            background: none;
+        }
+    }
 </style>
 
 
@@ -423,6 +449,19 @@
   }
   </style>
   
+  <style>
+    @media (max-width: 600px) {
+
+        .why-us-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .why-us-box {
+            width: 100%;
+            margin-bottom: 10px; /* Add some space between the boxes */
+        }
+    }
+  </style>
 
             
   <!-- Services Section -->
