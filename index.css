@@ -15,7 +15,7 @@ body {
     background-color: #000000; /* Soft light green background */
     color: #00000000; /* Darker text color for better readability */
     line-height: 1.6;
-    padding: -1;
+    
 }
 
 /* Navbar */
@@ -39,7 +39,7 @@ body {
 
 /* Navbar hover effect */
 .navbar:not(.navbar-full):hover {
-    max-width: 1200px;
+    max-width: 800px;
 }
 
 .navbar-full {
@@ -194,7 +194,9 @@ body {
     font-size: 4em;
     margin-bottom: 25px;
     font-weight: 800;
-    background-color: #1030316c;
+    background-color: rgba(36, 36, 36, 0.247);
+    backdrop-filter: blur(50px);
+    border: 2px solid #2929292f;
     color: #ffffff;
     padding: 20px 30px;
     border-radius: 500px;
