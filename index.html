@@ -799,8 +799,35 @@
     }
 
     .vivid-red-cross {
-        display: none; /* Hide section on screens smaller than 768px */
-    }
+                display: block;
+                padding: 20px;
+            }
+
+            .vivid-red-cross-container {
+                width: 100%;
+                padding: 0 10px; /* Padding for smaller screens */
+            }
+
+            .vivid-red-cross-box {
+                max-width: 350px; /* Restricting to mobile size */
+                height: 190px; /* Smaller height for mobile screens */
+                margin-top: 20px;
+            }
+
+            .vivid-description {
+                font-size: 0.9rem; /* Slightly smaller font size */
+                max-width: 320px; /* Ensure the description fits the mobile screen */
+            }
+
+            .vivid-button {
+                padding: 8px 12px; /* Smaller button padding */
+                font-size: 0.9rem; /* Button text size */
+            }
+            .vivid-image {
+                width: 597PX;  /* Make the image fill the container's width */
+                height: 1950PX; /* Make the image fill the container's height */
+                object-fit: contain; /* Ensures the whole image is visible without cropping */
+            }
 
 }
 
