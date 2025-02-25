@@ -530,9 +530,56 @@
     </div>
 </section>
 
-<style>
-    /* Section container */
-    .section-container {
+  <!-- Web Design Section -->
+  <section id="web-design" class="section-container">
+    <div class="content-container">
+      <h2 class="section-title">Vivid Axis: Website Development</h2>
+      <p class="intro-text">At Vivid Axis, we specialize in designing sleek, modern websites that not only look fantastic but also provide a seamless user experience. Our expertise in <strong>HTML</strong> and <strong>CSS</strong> allows us to bring your brand vision to life with clean, optimized code and beautifully designed pages.</p>
+
+      <div class="wrapper">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="description">
+                        <h4>Responsive Design</h4>
+                        <p>Vivid Axis offers very responsive websites to keep customers interested!</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2" >
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="description">
+                        <h4>Top Notch UX</h4>
+                        <p>User Experience is a crucial factor in gaining customers trust. Here at Vivid Axis, we provide top user experience!</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3" >
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">3</div>
+                    <div class="description">
+                        <h4>Fast Delivery</h4>
+                        <p>The faster you get your website, the faster you can start earning! At Vivid Axis, we make that possible!</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ /* Section container */
+ .section-container {
       padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
@@ -544,7 +591,7 @@
       font-weight: bold;
       color: #44889196; /* Cyan/Blue Accent */
       text-align: center;
-      margin-bottom: 10px;
+     
     }
 
     /* Intro Text */
@@ -552,133 +599,113 @@
       font-size: 18px;
       line-height: 1.6;
       text-align: center;
-      margin-bottom: 40px;
+      
     }
+    .wrapper {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This ensures center alignment */
+    padding: 10px 0;
+}
 
-    /* Features List */
-    /* Features List */
-  /* Feature Cards */
-  .feature-list {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 20px 10px;
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 2px solid #b0b0ba15;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: rgba(132, 184, 197, 0.034);
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #acacac46;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('/moreimg/Frame1.png');
+}
+.card[for="c2"] {
+    background-image: url('/moreimg/Frame2.png');
+}
+.card[for="c3"] {
+    background-image: url('/moreimg/Frame3.png');
+}
+
+@media screen and (max-width: 768px) {
+    #web-design {
+        display: none;
     }
+}
 
-    /* Individual Card */
-    .feature-item {
-      background-color: #000000;
-      border-radius: 50px;
-      padding: 20px;
-      width: 400px;
-      height: 175px;
-      text-align: center;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-      border: 1px solid #292929;
-      opacity: 0;
-      transform: translateY(1px);
-      transition: opacity 0.1s, transform 0.1s, box-shadow 0.1s ease-in-out; /* Smooth transition for box-shadow */
-      display: grid;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Feature Item Text Styling */
-    .feature-item h3 {
-      color: #83838368; /* Cyan/Blue Accent */
-      font-size: 24px;
-      margin-bottom: 15px;
-    }
-
-    .feature-item p {
-      color: #ccc;
-      font-size: 16px;
-    }
-
-    /* Scroll Animation */
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-
-    /* When an element becomes visible on scroll */
-    .fade-up.visible {
-      animation: fadeIn 1s ease-out forwards;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Web Design Section -->
-  <section id="web-design" class="section-container">
-    <div class="content-container">
-      <h2 class="section-title">Web Design, HTML & CSS: Crafting Stunning Websites</h2>
-      <p class="intro-text">At Vivid Axis, we specialize in designing sleek, modern websites that not only look fantastic but also provide a seamless user experience. Our expertise in <strong>HTML</strong> and <strong>CSS</strong> allows us to bring your brand vision to life with clean, optimized code and beautifully designed pages.</p>
-
-      <div class="feature-list">
-        <div class="feature-item fade-up">
-          <h3>Responsive Design</h3>
-          <p>Your website will look amazing on any device, from desktop to mobile.</p>
-        </div>
-        <div class="feature-item fade-up">
-          <h3>Custom Layouts</h3>
-          <p>Fully tailored to meet your unique needs and branding style.</p>
-        </div>
-        <div class="feature-item fade-up">
-          <h3>Animations & Interactions</h3>
-          <p>With smooth CSS transitions and scrolling effects, we create dynamic interactions.</p>
-        </div>
-        <div class="feature-item fade-up">
-          <h3>Fast Delivery</h3>
-          <p>With multiple people working on your website, we deliver fast. Real fast.</p>
-        </div>
-      </div>
-    </div>
+    </style>
   </section>
 
-  <!-- JavaScript for localized hover glow effect -->
-  <script>
-    const featureItems = document.querySelectorAll('.feature-item');
-
-    featureItems.forEach(item => {
-      let requestId; // Variable to hold the requestAnimationFrame ID
-
-      const handleMouseMove = (e) => {
-        const rect = item.getBoundingClientRect(); 
-        const mouseX = e.clientX - rect.left; // X position inside card
-        const mouseY = e.clientY - rect.top; // Y position inside card
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const deltaX = mouseX - centerX; // X offset from center
-        const deltaY = mouseY - centerY; // Y offset from center
-
-        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY); // Distance from the center of the card
-        const maxDistance = Math.sqrt(centerX * centerX + centerY * centerY); // Maximum distance (corner of the card)
-
-        const glowIntensity = Math.min(1, distance / maxDistance); // The intensity of the glow, based on the mouse distance
-        const glowSize = Math.min(30, (glowIntensity * 100)); // Dynamic glow size based on intensity
-
-        // Apply the glow effect at the mouse position instantly
-        item.style.transition = 'box-shadow 0.05s ease-out'; // Set transition time for instant effect
-        item.style.boxShadow = `${deltaX * 0.1}px ${deltaY * 0.1}px ${glowSize}px rgba(0, 188, 212, 0.8)`;
-      };
-
-      item.addEventListener('mousemove', (e) => {
-        // Cancel any previously requested animation frame to avoid queuing multiple
-        if (requestId) cancelAnimationFrame(requestId);
-
-        // Request a new animation frame to ensure smooth updates
-        requestId = requestAnimationFrame(() => handleMouseMove(e));
-      });
-
-      item.addEventListener('mouseleave', function () {
-        // Reset box shadow when the mouse leaves instantly
-        item.style.transition = 'box-shadow 0.1s ease-out'; // Smooth reset
-        item.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.3)';
-      });
-    });
-  </script>
+  
   <!-- JavaScript to trigger scroll animations -->
   <script>
     // Scroll animations
