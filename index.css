@@ -302,7 +302,7 @@ body {
 }
 
 .service {
-    background-color: rgba(121, 121, 121, 0.2); /* Partially transparent white background */
+    background-color: rgba(0, 0, 0, 0.2); /* Partially transparent white background */
     padding: 30px;
     border-radius: 100px;
     border: 2px solid rgba(255, 255, 255, 0.178); /* Slightly transparent border */
@@ -326,7 +326,7 @@ body {
 }
 
 .service:hover {
-    background-color: rgb(94, 125, 128);
+    background-color: rgba(94, 125, 128, 0.144);
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px #778ea0;
@@ -416,7 +416,7 @@ form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(22, 22, 22, 0.459); /* White form background for contrast */
+    background-color: rgba(0, 0, 0, 0.171); /* White form background for contrast */
     border-radius: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -424,24 +424,22 @@ form {
 }
 
 form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    color: #505050; /* Dark text for form labels */
+    display: block; /* Ensures the labels appear above the input fields */
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #ccc; /* Lighter color for visibility */
 }
 
 form input,
 form textarea {
+    display: block; /* Ensures they appear properly */
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 0px solid #ddd;
     border-radius: 15px;
-    font-size: 1.1em;
-    background-color: #4e4e4e34;
-    resize: none;
-    border: 1px solid #333;
-    color: rgb(255, 255, 255)
+    background-color: #3333331e; /* Darker background for visibility */
+    color: white;
+    border: 1px solid #777; /* Lighter border for contrast */
 }
 
 form button {
