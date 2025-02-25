@@ -1,7 +1,10 @@
 @font-face {
     font-family: 'IBM';
-    src: url(Quicksand-VariableFont_wght.ttf);
+    src: url('Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 /* Global Reset */
 * {
     margin: 0;
@@ -142,7 +145,7 @@ body {
 }
 
 .hero {
-    background-color: #ff7b00;
+    
     z-index: 5;
 }
 
@@ -344,14 +347,9 @@ body {
     color: #ffffff; /* Dark text */
 }
 
-.cashapp-link {
-    color: #ff7b00; /* Bright orange link color for contrast */
-    text-decoration: none;
-}
 
-.cashapp-link:hover {
-    text-decoration: underline;
-}
+
+
 
 /* Animation Effects */
 @keyframes fadeIn {
