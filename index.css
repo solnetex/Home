@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Quicksand';
-    src: url('Quicksand-VariableFont_wght.ttf') format('truetype');
+    src: url('Poppins-Thin.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
@@ -210,7 +210,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     animation: fadeInUp 2s ease forwards; /* Apply the fade-in and slide-up animation */
-    font-family: 'Quicksand', sans-serif; /* Added Quicksand font */
+    font-family: 'Poppins-Thin.ttf', Poppins-thin.ttf; /* Added Quicksand font */
 }
 
 /* Keyframes for the fade-in and slide-up animation */
