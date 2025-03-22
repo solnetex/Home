@@ -24,7 +24,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #0c171f96; /* Soft background */
+    background-color: #ffffff44; /* Soft background */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -36,9 +36,10 @@ body {
     backdrop-filter: blur(10px);
     font-family: 'Quicksand', sans-serif; 
     border-radius: 100px;
+    max-height: 130px;
     max-width: 600px;
     margin: 0 auto; /* Center the navbar */
-    border: 2px solid #2d53723f; /* Add a border */
+    border: 2px solid #ffffff91; /* Add a border */
 }
 .navbar * {
     font-family: 'Quicksand', sans-serif !important;
@@ -50,8 +51,12 @@ body {
 
 .navbar-full {
     max-width: 100%; /* Full width */
-    border-radius: 20px; /* Remove border-radius */
+    border-radius: 10px;
     top: 0; /* Ensure it aligns at the top */
+}
+
+.navbar-full .logo {
+    margin-left: 1px;
 }
 
 /* Logo */
@@ -60,8 +65,12 @@ body {
 }
 
 .logo {
-    width: 95%;
+    width: 35%;
     max-width: 250px;
+    margin-left: 20px;
+    margin-top: 6px;
+    border: 2px solid #000000;
+    border-radius: 23px;
     transition: transform 0.7s ease;
 }
 
@@ -87,7 +96,7 @@ body {
 }
 
 .navbar .nav-links a {
-    color: #565656; /* Original color */
+    color: #ffffff; /* Original color */
     text-decoration: none;
     font-weight: 600;
     padding: 5px;
@@ -96,8 +105,7 @@ body {
 }
 
 .navbar .nav-links a:hover {
-    color: #2d5372; /* Change color on hover */
-    text-shadow: 0 0 10px rgba(45, 83, 114, 0.8), 0 0 20px rgba(45, 83, 114, 0.6), 0 0 30px rgba(45, 83, 114, 0.4);
+    color: #797979; /* Change color on hover */
     font-family: 'IBM', sans-serif;
 }
 
@@ -155,7 +163,7 @@ body {
 .animate {
     position: relative;
     height: 100vh; /* Adjust the height as needed */
-    background: radial-gradient(circle at bottom, #00ccff, #50b0ff, #84c8ff, #00000041, #000000, #000000, #000000);
+    background: radial-gradient(circle at bottom, #ffffff, #b1b6b9, #707070, #00000041, #000000, #000000, #000000);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,17 +185,6 @@ body {
     z-index: -1;
 }
 
-.hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the video covers the entire background */
-    z-index: -2; /* Sends the video behind other elements */
-    
-}
 
 .hero-content {
     position: relative;
@@ -210,7 +207,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     animation: fadeInUp 2s ease forwards; /* Apply the fade-in and slide-up animation */
-    font-family: 'Poppins-Thin.ttf', Poppins-thin.ttf; /* Added Quicksand font */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 /* Keyframes for the fade-in and slide-up animation */
@@ -231,7 +228,7 @@ body {
     padding: 12px 25px;
     background-color: #50505000;
     backdrop-filter: blur(50px);
-    color: #284242;
+    color: #353535;
     text-decoration: none;
     border-radius: 35px;
     font-size: 1.1em;
@@ -254,7 +251,7 @@ body {
 
 .hero .btn:hover {
     background-color: rgba(52, 61, 70, 0.432)5e; /* Darker shade for hover */
-    color: hsl(188, 57%, 82%);
+    color: hsl(0, 0%, 100%);
     cursor: ;
 }
 
@@ -324,21 +321,32 @@ body {
     font-size: 1.8em;
     margin-bottom: 10px;
     color: #ffffff62;
+    transition: color 0.3s ease;
 }
 
 .service p {
     font-size: 1.1em;
     margin-bottom: 20px;
     color: #b1b2b3;
+    transition: color 0.3s ease;
 }
 
 .service:hover {
-    background-color: rgba(94, 125, 128, 0.144);
-    transform: translateY(-10px);
+    background-color: rgb(248, 248, 248);
+    
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px #778ea0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px #ffffff;
     color: #000000;
     transition: background-color 0.9s ease, transform 0.9s, box-shadow 0.3s;
+    
+}
+
+.service:hover p {
+    color: #000000;
+}
+
+.service:hover h3 {
+    color: #000000;
 }
 
 
@@ -447,22 +455,21 @@ form textarea {
 form button {
     width: 100%;
     padding: 15px;
-    background-color: #31394e4d; /* Strong blue button for contrast */
+    background-color: #4d4d4d4d; /* Strong blue button for contrast */
     color: #ffffff; /* White text */
     border: none;
     border-radius: 15px;
     font-size: 2em;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s ease, box-shadow 0.3s;
     border: 1px solid #333;
 }
 
 form button:hover {
     background-color: #ffffff; /* Darker blue on hover */
     color: #000000;
-    transform: translateY(-10px);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px rgba(255, 255, 255, 0.7); /* Increased red glow */
-    border: none;
+    
 }
 
 /* Responsive Design */

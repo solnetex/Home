@@ -39,9 +39,11 @@ p {
 }
 
 .logo {
-    width: 95%;
+    width: 30%;
     max-width: 250px;
     transition: transform 0.3s ease;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
 }
 
 .logo:hover {
@@ -80,8 +82,8 @@ p {
     align-items: center;
     justify-content: center;
     padding: 80px 10%;
-    background: url('moreimg/ThumbVivid.png') no-repeat center center;
-    background-size: cover;
+    background: url('moreimg/VAWHITE.png') no-repeat left;
+    background-size: 30%;
     color: white;
     height: 80vh;
     position: relative;
