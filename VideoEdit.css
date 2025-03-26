@@ -42,8 +42,6 @@ p {
     width: 30%;
     max-width: 250px;
     transition: transform 0.3s ease;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
 }
 
 .logo:hover {
@@ -82,8 +80,9 @@ p {
     align-items: center;
     justify-content: center;
     padding: 80px 10%;
-    background: url('moreimg/VAWHITE.png') no-repeat left;
+    background: url('moreimg/SolraWHITEBG.png') no-repeat;
     background-size: 30%;
+    background-position: 20px center;
     color: white;
     height: 80vh;
     position: relative;
@@ -173,86 +172,7 @@ p {
     font-size: 1.1em;
 }
 
-/* Order Section */
-.order-section {
-    padding: 40px 5%;
-    background-color: #202020;
-    text-align: center;
-    border-radius: 500px;
-}
 
-.order-section h2 {
-    font-size: 2.5em;
-    color: #d4d4d4;
-}
-
-.order-section .btn {
-    padding: 12px 24px;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 1.5em;
-    border-radius: 5px;
-    transition: all 0.7s ease;
-    text-align: center;
-}
-
-.order-section p {
-    color: #bbbbbb;
-}
-
-.order-section .btn:hover {
-    background-color: #ffffff;
-    border-radius: 35px;
-    color: #000000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px #ffffff;
-}
-
-/* Contact Form */
-form {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: rgba(77, 77, 77, 0.459);
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    color: #505050;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    font-size: 1.1em;
-    background-color: #4e4e4e;
-    color: rgb(255, 255, 255);
-}
-
-form button {
-    width: 100%;
-    padding: 15px;
-    background-color: #3c528f;
-    color: #ffffff;
-    border: none;
-    border-radius: 15px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s;
-}
-
-form button:hover {
-    background-color: #ffffff;
-    color: #000000;
-    transform: translateY(-10px);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px rgba(255, 255, 255, 0.7);
-}
 
 /* Full Mobile Responsiveness */
 @media (max-width: 768px) {

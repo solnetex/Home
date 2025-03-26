@@ -69,8 +69,6 @@ body {
     max-width: 250px;
     margin-left: 20px;
     margin-top: 6px;
-    border: 2px solid #000000;
-    border-radius: 23px;
     transition: transform 0.7s ease;
 }
 
@@ -224,7 +222,7 @@ body {
 
 .hero-content {
     position: relative;
-    z-index: 1; /* Ensures the content is above the video and tint */
+    z-index: 3; /* Ensures the content is above the video and tint */
     text-align: center;
     color: white; /* Keeps text readable on the tinted background */
 }
