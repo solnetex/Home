@@ -270,7 +270,7 @@ body {
     transition: all 0.3s ease;
     display: inline-block; /* Ensures proper centering */
     margin-top: 20px; /* Adds space between heading and button */
-    border: 2px solid #a8a8a818; /* Add a border */
+    border: 2px solid #a8a8a818; 
 }
 
 
@@ -284,7 +284,7 @@ body {
 
 
 .hero .btn:hover {
-    background-color: rgba(52, 61, 70, 0.432)5e; /* Darker shade for hover */
+    background-color: rgba(52, 61, 70, 0.432)5e; 
     color: hsl(0, 0%, 100%);
 }
 
