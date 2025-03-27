@@ -65,9 +65,9 @@ body {
 }
 
 .logo {
-    width: 35%;
+    width: 60%;
     max-width: 250px;
-    margin-left: 20px;
+    margin-left: 2px;
     margin-top: 6px;
     transition: transform 0.7s ease;
 }
@@ -286,7 +286,6 @@ body {
 .hero .btn:hover {
     background-color: rgba(52, 61, 70, 0.432)5e; /* Darker shade for hover */
     color: hsl(0, 0%, 100%);
-    cursor: ;
 }
 
 #about {
