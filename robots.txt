@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solnetex.github.io/Home/sitemap.xml
